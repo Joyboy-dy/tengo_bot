@@ -36,8 +36,8 @@ Pour faire fonctionner Tengo Bot, vous aurez besoin de :
 
 1.  **Clonez ce repository :**
     ```bash
-    git clone https://github.com/VotreNomUtilisateur/VotreNomDuRepository.git
-    cd VotreNomDuRepository
+    git clone https://github.com/Joyboy-dy/tengo_bot.git
+    cd tengo_bot
     ```
 2.  **Installez les dépendances Python :**
     ```bash
@@ -47,13 +47,13 @@ Pour faire fonctionner Tengo Bot, vous aurez besoin de :
     ```dotenv
     TELEGRAM_BOT_TOKEN="votre_token_telegram"
     GEMINI_API_KEY="votre_cle_api_gemini"
-    MARKDOWN_EXPORT_PATH="chemin/vers/votre/catalogue.md" # Ou l'URL raw si en ligne, ex: https://raw.githubusercontent.com/Joyboy-dy/ChatExport_2025-04-15/refs/heads/main/ChatExport_2025-04-15/messages.md
+    MARKDOWN_EXPORT_PATH="chemin/vers/votre/catalogue.md"
     ```
     Assurez-vous que `MARKDOWN_EXPORT_PATH` pointe correctement vers votre fichier catalogue Markdown.
 4.  **Préparez votre catalogue Markdown :** Votre catalogue doit être un fichier `.md` contenant les informations sur les animes que le bot pourra consulter. Le formatage interne du fichier (utilisation de gras, listes, liens) est important car le bot utilise Gemini pour l'analyser et extraire les informations pertinentes. Le code est optimisé pour reconnaître des structures simples avec des titres en gras, des alias entre parenthèses `(Alias: ...)`, et des listes.
 5.  **Exécutez le bot :**
     ```bash
-    python bot.py # Ou le nom de votre fichier principal
+    python tengo.py 
     ```
     Pour une exécution en continu (déploiement), utilisez un gestionnaire de processus (`screen`, `tmux`, `systemd`) ou une plateforme d'hébergement adaptée aux applications qui font du polling.
 

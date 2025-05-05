@@ -1,0 +1,5 @@
+python-telegram-bot
+telethon
+google-generativeai
+python-dotenv
+asyncio
